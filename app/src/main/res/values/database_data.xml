@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string-array name="name">
+    <string-array name="animal_name">
         <item>Sumatran Tigers</item>
         <item>Asiatic Lions</item>
         <item>Jaguars</item>
-        <item>North African Cheetah</item>
+        <item>Northwest African Cheetah</item>
     </string-array>
 
-    <string-array name="description">
-        <item>Sumatran tigers have webbed paws, which means that they’re brilliant swimmers.
+
+    <string-array name="animal_description">
+        <item>Sumatran tigers have webbed paws, which means that they\re brilliant swimmers.
             Sumatran tigers are the smallest of all tigers and their low stance lets them creep up
             on prey unseen. Their stripes are narrower and closer together than those of other tigers.</item>
 
@@ -16,11 +17,15 @@
             They have few sweat glands so they wisely tend to conserve their energy by resting during the day to
             conserve their energy at night for when it is cooler. </item>
 
-        <item>jaguar (Panthera onca) is a wild cat species and the only extant member of the genus Panthera
-            native to the Americas. The jaguar's present range extends from Southwestern United States and
+        <item>jaguar is a wild cat species and the only extant member of the genus Panthera
+            native to the Americas. The jaguar\s present range extends from Southwestern United States and
             Mexico in North America, across much of Central America, and south to Paraguay and northern Argentina
             in South America</item>
 
-        <item></item>
+        <item>The Northwest African cheetah, also known as the Saharan cheetah, is a
+            cheetah subspecies native to the Sahara desert and the Sahel. The Northwest African cheetah is quite
+            different in appearance from the other African cheetahs. Its coat is shorter and nearly white in color,
+            with spots that fade from black over the spine to light brown on the legs.</item>
     </string-array>
+
 </resources>

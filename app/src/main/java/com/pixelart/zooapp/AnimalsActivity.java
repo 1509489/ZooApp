@@ -8,19 +8,23 @@ import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.View;
 
+import java.lang.reflect.Array;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class AnimalsActivity extends AppCompatActivity {
     private static final String TAG = "AnimalActivity";
 
-    private List<Animals> animalsList;
     private RecyclerView recyclerView;
     private RecyclerView.LayoutManager layoutManager;
     private RecyclerView.ItemAnimator animator;
     private AnimalListAdapter adapter;
+
+    List<String> nameList;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,7 +34,6 @@ public class AnimalsActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-        animalsList = new ArrayList<>();
         recyclerView = findViewById(R.id.rvAnimals);
         layoutManager = new LinearLayoutManager(this);
         animator = new DefaultItemAnimator();
@@ -38,21 +41,40 @@ public class AnimalsActivity extends AppCompatActivity {
         recyclerView.setLayoutManager(layoutManager);
         //recyclerView.setItemAnimator(animator);
 
-        adapter = new AnimalListAdapter(animalsList);
-        recyclerView.setAdapter(adapter);
+
 
         initAnimals();
-        adapter.notifyDataSetChanged();
+
 
     }
 
     private void initAnimals()
     {
-        animalsList.add(new Animals("Sumatran Tigers", "Sumatran tigers have webbed paws, which means that they’re brilliant swimmers.",
-                "", "", "", "", "", "", "", ""));
+        DatabaseHelper databaseHelper = new DatabaseHelper(this);
+        String[] name = getResources().getStringArray(R.array.animal_name);
+        String[] description = getResources().getStringArray(R.array.animal_description);
 
-        animalsList.add(new Animals("Sumatran Tigers", "There were once so many Asiatic lions on our planet that they roamed from north-east " +
-                "India to the Mediterranean but today there are only about 350 left in the wild and all of them live in India’s Gir Forest. ",
-                "", "", "", "", "", "", "", ""));
+        for (int i = 0; i < name.length; i++)
+        {
+            Animals animal = new Animals(name[i], description[i], "", "", "", "", "", "", "", "");
+            databaseHelper.addAnimals(animal);
+        }
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+
+        DatabaseHelper databaseHelper = new DatabaseHelper(this);
+        List<Animals> animals = databaseHelper.getAllAnimals();
+
+        for (Animals  animal : animals)
+        {
+            Log.d(TAG, "displayAnimal " + animal.getName() + " " + animal.getDescription());
+        }
+
+        adapter = new AnimalListAdapter(animals);
+        recyclerView.setAdapter(adapter);
+        adapter.notifyDataSetChanged();
     }
 }

@@ -2,6 +2,7 @@
     <string name="app_name">Zoo Topia</string>
     <string name="title_activity_category">Categories</string>
     <string name="welcome">Welcome To ZooTopia</string>
+    <string name="title_activity_animals">Animals</string>
 
     <string name="zoo_information">
         We have over 5,000 animals at the zoo ranging from different species including <b>Mammals, Birds,
@@ -66,5 +67,6 @@
         <item>Snakes and Lizards</item>
         <item>Turtles and Tortoises</item>
     </string-array>
-    <string name="title_activity_animals">AnimalsActivity</string>
+
+
 </resources>

@@ -5,6 +5,7 @@ import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
+import android.util.Log;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -16,7 +17,6 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     private static final String DATABASE_NAME = "AnimalseDB";
 
     private static final String TABLE_NAME = "Animals";
-    private static final String ANIMAL_ID = "Id";
     private static final String ANIMAL_NAME = "Name";
     private static final String ANIMAL_DESCRIPTION = "Description";
     private static final String ANIMAL_LOCATION = "Location";
@@ -27,6 +27,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     private static final String ANIMAL_STATUS = "Status";
     private static final String ANIMAL_THREATS = "Threats";
     private static final String ANIMAL_CATEGORY = "Category";
+    //private static final String ANIMAL_ID = "Id";
 
     public DatabaseHelper(Context context)
     {
@@ -35,10 +36,10 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     @Override
     public void onCreate(SQLiteDatabase db) {
 
-        String CREATE_TABLE = "CREATE TABLE " + TABLE_NAME + " (" + ANIMAL_ID + " INTEGER PRIMARY KEY AUTOINCREMENT, " +
-                ANIMAL_NAME + " TEXT," + ANIMAL_DESCRIPTION + " TEXT," + ANIMAL_LOCATION + " TEXT,"  + ANIMAL_HABITAT + " TEXT," +
+        String CREATE_TABLE = "CREATE TABLE " + TABLE_NAME + " (" + ANIMAL_NAME + " TEXT PRIMARY KEY," + ANIMAL_DESCRIPTION +
+                " TEXT," + ANIMAL_LOCATION + " TEXT,"  + ANIMAL_HABITAT + " TEXT," +
                 ANIMAL_DIET + " TEXT," + ANIMAL_SIZE + " TEXT," + ANIMAL_WEIGHT + " TEXT," + ANIMAL_STATUS + " TEXT," + ANIMAL_THREATS + " TEXT," +
-                ANIMAL_CATEGORY + " TEXT" + ")";
+                ANIMAL_CATEGORY + " TEXT" /*+ ANIMAL_ID +" INTEGER PRIMARY KEY AUTOINCREMENT" */ + ")";
 
         db.execSQL(CREATE_TABLE);
     }
@@ -66,6 +67,8 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         values.put(ANIMAL_CATEGORY, animals.getCategory());
 
         database.insert(TABLE_NAME, null, values);
+
+        Log.d(TAG, "addAnimals");
     }
 
     public List<Animals> getAllAnimals()

@@ -45,8 +45,7 @@ public class Animals implements Parcelable {
         this.category = category;
     }
 
-    public Animals(int id, String name, String description, String location, String habitat, String diet, String size, String weight, String status, String threats, String category) {
-        this.id = id;
+    public Animals(String name, String description, String location, String habitat, String diet, String size, String weight, String status, String threats, String category, int id) {
         this.name = name;
         this.description = description;
         this.location = location;
@@ -57,6 +56,7 @@ public class Animals implements Parcelable {
         this.status = status;
         this.threats = threats;
         this.category = category;
+        this.id = id;
     }
 
     public int getId() {
