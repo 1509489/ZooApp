@@ -1,0 +1,70 @@
+<resources>
+    <string name="app_name">Zoo Topia</string>
+    <string name="title_activity_category">Categories</string>
+    <string name="welcome">Welcome To ZooTopia</string>
+
+    <string name="zoo_information">
+        We have over 5,000 animals at the zoo ranging from different species including <b>Mammals, Birds,
+        Reptiles, Amphibians, Fish and Invertebrates </b>. Some
+        of these animals include the most exotic and endangered in the world.
+
+    </string>
+
+    <!--Spinner array-->
+    <string-array name="categories">
+        <!--<item>Select Category</item>-->
+        <item>Amphibians</item>
+        <item>Birds</item>
+        <item>Fish</item>
+        <item>Mammals</item>
+        <item>Invertebrates</item>
+        <item>Reptiles</item>
+    </string-array>
+
+    <string-array name="amphibians">
+        <item>Frogs and Toads</item>
+    </string-array>
+
+    <string-array name="birds">
+        <item>Songbirds</item>
+        <item>Penguins</item>
+        <item>Parrots</item>
+        <item>Ratites</item>
+        <item>Flamingos</item>
+        <item>Rollers and Weavers</item>
+        <item>Hornbills</item>
+        <item>Owls</item>
+        <item>Cranes and Ibis</item>
+        <item>Pigeons and Doves</item>
+    </string-array>
+
+    <string-array name="fish">
+        <item>Marine Fish</item>
+        <item>Fresh Water Fish</item>
+    </string-array>
+
+    <string-array name="mammals">
+        <item>Bears</item>
+        <item>Big Cats</item>
+        <item>Dogs</item>
+        <item>Elephants</item>
+        <item>Hoofed Animals</item>
+        <item>Rhinos, Horses and Tapirs</item>
+        <item>Meerkats, Mongoose and Otters</item>
+        <item>Monkeys and Apes</item>
+        <item>Other Mammals</item>
+    </string-array>
+
+    <string-array name="invertebrates">
+        <item>Butterflies and Moths</item>
+        <item>Leaf and Stick insects</item>
+        <item>Other Invertebrates</item>
+    </string-array>
+
+    <string-array name="reptiles">
+        <item>Crocodiles</item>
+        <item>Snakes and Lizards</item>
+        <item>Turtles and Tortoises</item>
+    </string-array>
+    <string name="title_activity_animals">AnimalsActivity</string>
+</resources>
