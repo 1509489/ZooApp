@@ -52,7 +52,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
     public void addAnimals(Animals animals)
     {
-        SQLiteDatabase database = this.getReadableDatabase();
+        SQLiteDatabase database = this.getWritableDatabase();
         ContentValues values = new ContentValues();
 
         values.put(ANIMAL_NAME, animals.getName());
@@ -91,5 +91,47 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         }
 
         return  animals;
+    }
+
+    public List<Animals> getAnimalsByCategory(String category)
+    {
+        SQLiteDatabase database = this.getWritableDatabase();
+        String query = "Select * from " + TABLE_NAME + " WHERE " + ANIMAL_CATEGORY + " = '" + category + "'";
+
+        Cursor cursor = database.rawQuery(query, null);
+        List<Animals> animals = new ArrayList<>();
+        if (cursor.moveToFirst())
+        {
+            do
+            {
+                Animals animal = new Animals(cursor.getString(0), cursor.getString(1),
+                        cursor.getString(2), cursor.getString(3),
+                        cursor.getString(4), cursor.getString(5), cursor.getString(6),
+                        cursor.getString(7), cursor.getString(8));
+                animals.add(animal);
+            }while (cursor.moveToNext());
+        }
+        Log.d(TAG, "getAnimalsByCategory " + animals.toString());
+        return  animals;
+    }
+
+    public void updateDatabase(String name)
+    {
+        SQLiteDatabase database = this.getWritableDatabase();
+        ContentValues values = new ContentValues();
+        Animals animals = new Animals();
+
+        values.put(ANIMAL_NAME, animals.getName());
+        values.put(ANIMAL_DESCRIPTION, animals.getDescription());
+        values.put(ANIMAL_LOCATION, animals.getLocation());
+        values.put(ANIMAL_HABITAT, animals.getHabitat());
+        values.put(ANIMAL_DIET, animals.getDiet());
+        values.put(ANIMAL_SIZE, animals.getSize());
+        values.put(ANIMAL_WEIGHT, animals.getWeight());
+        values.put(ANIMAL_STATUS, animals.getStatus());
+        values.put(ANIMAL_THREATS, animals.getThreats());
+        values.put(ANIMAL_CATEGORY, animals.getCategory());
+
+        database.update(TABLE_NAME, values,  ANIMAL_NAME + " =? " , new String[]{name});
     }
 }

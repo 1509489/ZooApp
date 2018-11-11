@@ -24,8 +24,6 @@ public class AnimalsActivity extends AppCompatActivity {
     private RecyclerView.ItemAnimator animator;
     private AnimalListAdapter adapter;
 
-    List<String> nameList;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -39,34 +37,18 @@ public class AnimalsActivity extends AppCompatActivity {
         animator = new DefaultItemAnimator();
 
         recyclerView.setLayoutManager(layoutManager);
-        //recyclerView.setItemAnimator(animator);
-
-
-
-        initAnimals();
-
+        recyclerView.setItemAnimator(animator);
 
     }
 
-    private void initAnimals()
-    {
-        DatabaseHelper databaseHelper = new DatabaseHelper(this);
-        String[] name = getResources().getStringArray(R.array.animal_name);
-        String[] description = getResources().getStringArray(R.array.animal_description);
-
-        for (int i = 0; i < name.length; i++)
-        {
-            Animals animal = new Animals(name[i], description[i], "", "", "", "", "", "", "", "");
-            databaseHelper.addAnimals(animal);
-        }
-    }
 
     @Override
     protected void onResume() {
         super.onResume();
+        String category = getIntent().getStringExtra("category");
 
         DatabaseHelper databaseHelper = new DatabaseHelper(this);
-        List<Animals> animals = databaseHelper.getAllAnimals();
+        List<Animals> animals = databaseHelper.getAnimalsByCategory(category);
 
         for (Animals  animal : animals)
         {

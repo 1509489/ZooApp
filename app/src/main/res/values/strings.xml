@@ -13,7 +13,6 @@
 
     <!--Spinner array-->
     <string-array name="categories">
-        <!--<item>Select Category</item>-->
         <item>Amphibians</item>
         <item>Birds</item>
         <item>Fish</item>
@@ -22,6 +21,7 @@
         <item>Reptiles</item>
     </string-array>
 
+    <!--ListView arrays-->
     <string-array name="amphibians">
         <item>Frogs and Toads</item>
     </string-array>
@@ -68,5 +68,16 @@
         <item>Turtles and Tortoises</item>
     </string-array>
 
+    <!--End of ListView arrays-->
+
+    <string name="name">Name:</string>
+    <string name="description">Description:</string>
+    <string name="location">Location:</string>
+    <string name="habitat">Habitat:</string>
+    <string name="diet">Diet:</string>
+    <string name="size">Size:</string>
+    <string name="weight">Weight:</string>
+    <string name="status">Status:</string>
+    <string name="threats">Threats:</string>
 
 </resources>

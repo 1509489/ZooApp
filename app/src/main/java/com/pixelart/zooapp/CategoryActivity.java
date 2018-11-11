@@ -106,11 +106,12 @@ public class CategoryActivity extends AppCompatActivity implements AdapterView.O
     @Override
     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 
-        String item = parent.getItemAtPosition(position).toString();
+        String category = parent.getItemAtPosition(position).toString();
 
-        Toast.makeText(this, item, Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, category, Toast.LENGTH_SHORT).show();
 
         Intent intent = new Intent(this, AnimalsActivity.class);
+        intent.putExtra("category", category);
         startActivity(intent);
 
     }

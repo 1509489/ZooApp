@@ -39,6 +39,7 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.pixelart.zooapp.CategoryActivity" />
         </activity>
+        <activity android:name=".AnimalsDetailActivity"></activity>
     </application>
 
 </manifest>
