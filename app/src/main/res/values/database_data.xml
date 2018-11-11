@@ -4,7 +4,16 @@
         <item>Sumatran Tigers</item>
         <item>Asiatic Lions</item>
         <item>Jaguars</item>
-        <item>Northwest African Cheetah</item>
+        <item>North African Cheetah</item>
+        <item>Mountain Chicken Frog</item>
+        <item>Dart Frog</item>
+        <item>Golden Mantella Frog</item>
+        <item>Javan Green Magpie</item>
+        <item>Blue-crowned laughingthrush</item>
+        <item>Montserrat Oriole</item>
+        <item>Bali Starling</item>
+        <item>Java Sparrow</item>
+        <item>Humboldt Penguins</item>
     </string-array>
 
 
@@ -26,6 +35,192 @@
             cheetah subspecies native to the Sahara desert and the Sahel. The Northwest African cheetah is quite
             different in appearance from the other African cheetahs. Its coat is shorter and nearly white in color,
             with spots that fade from black over the spine to light brown on the legs.</item>
+
+        <item>It\s one of the world\s biggest frogs, sometimes weighing in at more than a kilogram. With powerful back
+            legs, it can jump over a man\s head or more than two metres long. But it\s mainly crepuscular or nocturnal,
+            resting in the day (inside burrows, under logs or camouflaged on the leaf litter) and hunting for food at dusk.</item>
+
+        <item>Dart Frog Phyllobates terribilis is considered to be the most toxic land vertebrate in the world. It is thought
+            to contain enough toxins to potentially kill up to 20 humans! Most other dart frogs, while colorful and toxic enough to
+            discourage predation, are much less hazardous. </item>
+
+        <item>The beautiful golden mantella frog is usually bright yellow, orange or red in colour with obvious black eyes. The legs
+            of these bright frogs are short and their fingertips have distinctive pads. Males are typically smaller than females and have
+            a more angular body. These small amphibians retain the toxins from the insets they eat so are poisonous!</item>
+
+        <item>This brightly coloured songbird is one of Indonesia\s most beautiful, but also most endangered.</item>
+
+        <item>The blue-crowned laughingthrush is one of the rarest species. They\re only found in two tiny areas of China
+            and there are thought to be less than 200 left in the wild. </item>
+
+        <item>Montserrat orioles come from the island they are named after – Montserrat in the West Indies. They\re the island\s national symbol.</item>
+        <item>The Bali starling is one of the rarest birds in the world and it\s future in the wild is hanging in the balance.</item>
+        <item>Also known as the Java rice bird, these birds are distinctive with their thick red bill and grey upper parts.</item>
+
+        <item>Penguins are one of the most recognisable birds in the world - and rightly so, as they are very special.
+            The black on their back and the white on their front is no coincidence - in fact, it helps camouflage them in the water with their
+            backs blending in with the water from above and their front mixing with the sunlight from below.</item>
+    </string-array>
+
+    <string-array name="animal_category">
+        <item>Big Cats</item>
+        <item>Big Cats</item>
+        <item>Big Cats</item>
+        <item>Big Cats</item>
+        <item>Frogs and Toads</item>
+        <item>Frogs and Toads</item>
+        <item>Frogs and Toads</item>
+        <item>Songbirds</item>
+        <item>Songbirds</item>
+        <item>Songbirds</item>
+        <item>Songbirds</item>
+        <item>Songbirds</item>
+        <item>Penguins</item>
+    </string-array>
+
+    <string-array name="animal_location">
+        <item>The island of Sumatra, western Indonesia</item>
+        <item>Gir Forest, India</item>
+        <item>Central and South America – from Mexico to Argentina.</item>
+        <item>Historically found in the Middle East and southwestern Asia, but there is now only a small population
+            left in Iran. The remaining populations are found in Africa.</item>
+        <item>Dominica and Montserrat</item>
+        <item>Native to Central and South America </item>
+        <item>Madagascar</item>
+        <item>Western Java, Indonesia</item>
+        <item> Only found in two remote areas of China.</item>
+        <item>Only occur on the tiny Caribbean Island of Montserrat. </item>
+        <item>Bali, South East Asia</item>
+        <item>Java and Bali, Indonesia.</item>
+        <item>Pacific coast of South America</item>
+    </string-array>
+
+    <string-array name="animal_habitat">
+        <item>Dense forests from the lowlands to the mountains, Sundaland rivers and treat swamps.</item>
+        <item>Dry, deciduous forest</item>
+        <item>Lush rainforest, swamplands, scrubland, savannas. They always live within easy access of water.</item>
+        <item>Open grassland, savannahs, dry bush and scrub habitats, dense vegetation and mountain terrain</item>
+        <item>River valleys, ravines, moist forest land, palm groves, near springs and streams</item>
+        <item>Tropical and montane forests </item>
+        <item>Damp and swampy areas of rainforests.</item>
+        <item>Dense montane forests</item>
+        <item>Lowland and hill forest, often found along rivers and streams. </item>
+        <item>Damp gullies in the montane and hill rainforest, they build their nests under the leaves of Banana and Heliconia plants.</item>
+        <item>Savannah and gallery forest</item>
+        <item>Lowland forest.</item>
+        <item>Nest on islands and rocky coasts, burrowing holes in guano and sometimes using scrapes or caves. </item>
+    </string-array>
+
+    <string-array name="animal_diet">
+        <item>They are carnivores and will eat whatever they can catch including fish, crocodiles and
+            fowl, with the most common larger prey being wild pigs and deer.</item>
+
+        <item>Asiatic lions eat large animals as well, such as goats, nilgai, chital, sambhar and buffaloes.</item>
+
+        <item>Jaguars are known to eat peccary, crocodiles, snakes, monkeys, deer, sloths, tapirs, turtles, eggs,
+            frogs, fish and anything else they can catch.</item>
+
+        <item>The main prey of the Northwest African cheetah are antelopes which have adapted to an arid environment,
+            such as the addax, Dorcas gazelle, rhim gazelle, and dama gazelle. It also preys on smaller mammals such as hares.
+            Cheetahs can subsist without direct access to water, obtaining water indirectly from the blood of their prey.</item>
+        <item>It eats insects, snails, spiders, centipedes, sometimes geckoes, smaller frogs and even snakes.</item>
+
+        <item>They eat invertebrates such as ants and termites</item>
+        <item>They eat insects</item>
+        <item>The feed on insects, small lizards and frogs</item>
+        <item>Laughingthrushes are omnivorous and eat a variety of food including fruit, berries, insects and other invertebrates.</item>
+        <item>Mostly insects and other invertebrates, but also eats some fruit.</item>
+        <item>A variety of food including fruit, berries, seeds and insects</item>
+        <item>Seeds, leaves, plants and grasses</item>
+        <item>Small fish (anchovies, herring, smelt) and crustaceans </item>
+    </string-array>
+
+    <string-array name="animal_size">
+        <item>Length including tail up to 250cm, Shoulder height Up to 60cm</item>
+        <item>Length: 2.25m, Shoulder height: up to 120cm</item>
+        <item>Length (including tail): up to 241cm, Shoulder height: up to 76cm</item>
+        <item>Length (including tail): up to 219cm, Shoulder height: up to 94cm</item>
+        <item>Up to 21cm length</item>
+        <item>Up to 6cm </item>
+        <item>Around 24mm</item>
+        <item>31-33cm</item>
+        <item>Not Available</item>
+        <item>Not Available</item>
+        <item>Not Available</item>
+        <item>Up to 16cm in height</item>
+        <item>Length: Up to 70cm</item>
+    </string-array>
+
+    <string-array name="animal_weight">
+        <item>Up to 150kg</item>
+        <item>Up to 250kg</item>
+        <item>85– 158kg</item>
+        <item>36 – 65kg</item>
+        <item>up to 700g </item>
+        <item>Not Available</item>
+        <item>Less than 1g</item>
+        <item>125g</item>
+        <item>50 grams.</item>
+        <item>35 grams.</item>
+        <item>100 grams.</item>
+        <item>Not Available</item>
+        <item>3.6-5.9kg</item>
+    </string-array>
+
+    <string-array name="animal_status">
+        <item>Critically endangered</item>
+        <item>Endangered</item>
+        <item>Near threatened</item>
+        <item>Critically endangered</item>
+        <item>Critically endangered</item>
+        <item>Endangered</item>
+        <item>Critically endangered</item>
+        <item>Critically endangered</item>
+        <item>Critically endangered</item>
+        <item>Vulnerable</item>
+        <item>Critically endangered</item>
+        <item>Vulnerable</item>
+        <item>Vulnerable</item>
+    </string-array>
+
+    <string-array name="animal_threats">
+        <item>Deforestation, habitat loss and fragmentation caused by logging and increased
+            agricultural development particularly for palm oil plantations. Illegal hunting and
+            poaching particularly outside of National Park areas.</item>
+
+        <item>Hunting and poaching. Habitat loss and fragmentation caused by increased agricultural development.
+            Poisoning by farmers – the reduction in natural prey has led to increasing incidents of lions hunting livestock,
+            bringing them into direct conflict with farmers. Particular vulnerability to unpredictable events such as natural
+            disasters (flooding and fires) and potentially fatal disease epidemics. </item>
+
+        <item>Hunting for their pelts for the fur trade and by farmers in retaliation for attacks on livestock. Habitat loss and
+            deforestation due to agricultural and urban development. Such developments also have an impact on jaguar
+            food sources, reducing the amount of prey available. </item>
+
+        <item>Historically cheetahs were widely hunted for fur. They have an unusually low genetic variability, making them inheritably vulnerable.
+            Today, the cheetah populations suffer more from the loss of both habitat and prey. The reduced accessibility to both of these resources
+            increasingly brings them into conflict with larger predators and also farmers.</item>
+
+        <item>Habitat loss; hunting for its meat; disease; natural disaster such as 1997\s Montserrat volcano eruption.</item>
+
+        <item>Habitat loss through deforestation due to agricultural development, logging and human settlement. Predation by introduced species.
+            Illegal collection for the exotic pet trade. A deadly fungal disease called Chytridiomycosis</item>
+
+        <item>Habitat degradation due to subsistence agriculture, timber extraction, fires, and expanding human settlements.</item>
+
+        <item>Illegal poaching to be sold as pets for status symbols. Loss of habitat from agricultural expansion, logging and mining.</item>
+
+        <item>Loss of habitat due to logging of lowland rainforest for tropical timber and clearance of forests for agricultural land.
+            Capture of birds for the local and international pet bird market. Hunting of birds for food. </item>
+
+        <item> Loss of habitat due to the massive damage caused by the Soufriere Hills Volcano. Predation of eggs, young and incubating birds by introduced rats.
+            Loss of suitable nest sites, (Banana plants) which are severely damaged or destroyed by feral pigs, which were abandoned by
+            local farmers when the Volcano erupted.</item>
+        <item>Hunting for bird trade</item>
+        <item>Pet trade and use of pesticides in rice fields.</item>
+
+        <item>Historically, populations were threatened due to over-exploitation of guano. Currently, populations are declining due to limited food
+            availability caused by overfishing and El Nino. Habitat destruction also threatens this species. </item>
     </string-array>
 
 </resources>
